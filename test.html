@@ -4,12 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Custom Consent Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: #d50032; /* Air India red */
+        color: white;
+        text-align: center;
+      }
+
+      .header img {
+        width: 120px;
+        height: auto;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: #003366; /* Air India dark blue */
+        padding: 10px;
+      }
+
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .content {
+        margin: 20px;
+        text-align: center;
+      }
+
+      .banner-sdk {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 30px auto;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #d50032;
+        color: white;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
   </head>
   <body>
-    <!-- Embed the Web Component -->
-    <script src="https://custom-form-webcomponent.netlify.app/custom-consent-form.bundle.js"></script>
-    <custom-consent-form
-      form-id="676940cccb687341ac696a0c"
-    ></custom-consent-form>
+    <!-- Header with Air India logo -->
+    <div class="header">
+      <!-- <img src="https://www.airindia.in/favicon.ico" alt="Air India Logo" /> -->
+      <h1>Welcome to Air India</h1>
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">Book Flights</a>
+      <a href="#">Manage Booking</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Main content area -->
+    <div class="content">
+      <h2>Test Custom Consent Form</h2>
+      <!-- The custom consent form component -->
+      <script src="./Custom_Form_webcomponent.js" defer></script>
+      <custom-consent-form
+        form-id="677639c0f9190641f3eea9c7"
+      ></custom-consent-form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>&copy; 2025 Air India | All Rights Reserved</p>
+    </div>
   </body>
 </html>
